@@ -2,6 +2,10 @@ def item_based_recommend():
     import pandas as pd
     import numpy as np
     from sklearn.feature_extraction.text import TfidfVectorizer
+    
+    query = input("회사명 입력: ")  
+    
+    
 
     df = pd.read_csv('/Users/sky/class_python/6.Recommendation/saramin_jobkorea_sjy_real.csv', index_col=0)
     df.reset_index(inplace=True)
@@ -28,7 +32,7 @@ def item_based_recommend():
     idx2company = {}
     for i, c in company2idx.items(): idx2company[c] = i
 
-    idx = idx2company['두나무']
+    idx = idx2company[query]
     
     
     sim_scores = [(i, c) for i, c in enumerate(sim_table2[idx]) if i != idx]
