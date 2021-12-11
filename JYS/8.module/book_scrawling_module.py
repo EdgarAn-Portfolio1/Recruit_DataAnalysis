@@ -51,4 +51,4 @@ def scrape_it_book(output_path):
     book_IT_bestseller.to_csv(output_path,encoding='utf8')
 
 if __name__ == "__main__":
-    scrape_it_book('test.csv')
+    scrape_it_book
