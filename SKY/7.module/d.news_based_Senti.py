@@ -1,4 +1,4 @@
-def naver_news_it_recruit(output_path, keyword='취업 "it"'):
+def naver_news_it_recruit(output_path, keyword='비트코인'):
     import os
     import sys
     import urllib.request

@@ -15,7 +15,7 @@ def naver_news_it_recruit(output_path, keyword='취업 "it"'):
     client_secret = "JAHWSRUs2D" # 개발자센터에서 발급받은 Client Secret 값
     
     query = urllib.parse.quote(keyword)
-    # 위에 꺼로 검색기능 만들어도 되게따
+    # 위에 꺼로 검색기능 만들어도 되게따 -> when...? ㅎㅎ
     
     #encText = urllib.parse.quote('취업 "it"') # 메인에서 출력되게 만들깅
     idx = 0

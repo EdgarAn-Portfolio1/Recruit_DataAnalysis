@@ -1,0 +1,63 @@
+ale-py==0.7.3
+async-generator==1.10
+attrs==21.2.0
+beautifulsoup4==4.6.0
+brotlipy==0.7.0
+bs4==0.0.1
+certifi==2021.10.8
+cffi @ file:///Users/runner/miniforge3/conda-bld/cffi_1631636293358/work
+chardet @ file:///Users/runner/miniforge3/conda-bld/chardet_1610093454858/work
+charset-normalizer @ file:///home/conda/feedstock_root/build_artifacts/charset-normalizer_1626371162869/work
+click==8.0.3
+cloudpickle==2.0.0
+colorama @ file:///home/conda/feedstock_root/build_artifacts/colorama_1602866480661/work
+conda==4.10.3
+conda-package-handling @ file:///Users/runner/miniforge3/conda-bld/conda-package-handling_1618231726924/work
+Counter==1.0.0
+cryptography @ file:///Users/runner/miniforge3/conda-bld/cryptography_1633983374178/work
+Flask==2.0.2
+-e git+https://github.com/openai/gym@e5d1ba9a4c532603a4b08ba6dae624188287e69b#egg=gym
+h11==0.12.0
+idna @ file:///home/conda/feedstock_root/build_artifacts/idna_1609836280497/work
+importlib-resources==5.4.0
+itsdangerous==2.0.1
+Jinja2==3.0.3
+joblib==1.1.0
+JPype1==1.3.0
+konlpy==0.5.2
+lxml==4.6.4
+MarkupSafe==2.0.1
+nltk==3.6.5
+numpy==1.21.4
+oauthlib==3.1.1
+outcome==1.1.0
+pandas==1.3.4
+pycosat @ file:///Users/runner/miniforge3/conda-bld/pycosat_1624996792650/work
+pycparser @ file:///home/conda/feedstock_root/build_artifacts/pycparser_1593275161868/work
+pyOpenSSL @ file:///home/conda/feedstock_root/build_artifacts/pyopenssl_1633192417276/work
+PySocks @ file:///Users/runner/miniforge3/conda-bld/pysocks_1610291460269/work
+python-dateutil==2.8.2
+pytz==2021.3
+regex==2021.11.10
+requests @ file:///home/conda/feedstock_root/build_artifacts/requests_1626393743643/work
+requests-oauthlib==1.3.0
+ruamel-yaml-conda @ file:///Users/runner/miniforge3/conda-bld/ruamel_yaml_1624999868738/work
+scikit-learn==1.0.1
+scikit-surprise==1.1.1
+scipy==1.7.3
+selenium==4.1.0
+six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
+sklearn==0.0
+sniffio==1.2.0
+sortedcontainers==2.4.0
+soupsieve==2.3.1
+surprise==0.1
+threadpoolctl==3.0.0
+tqdm @ file:///home/conda/feedstock_root/build_artifacts/tqdm_1632160078689/work
+trio==0.19.0
+trio-websocket==0.9.2
+tweepy==3.10.0
+urllib3 @ file:///home/conda/feedstock_root/build_artifacts/urllib3_1632350318291/work
+Werkzeug==2.0.2
+wsproto==1.0.0
+zipp==3.6.0

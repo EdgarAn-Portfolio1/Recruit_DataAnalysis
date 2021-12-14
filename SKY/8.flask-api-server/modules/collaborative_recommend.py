@@ -27,3 +27,5 @@ def collaborative_recommend(datapath):
 if __name__ == "__main__":
     predict = collaborative_recommend('/Users/sky/class_python/6.Recommendation/company_member.csv')
     print(predict)
+
+# JSON 화면 띄워주어야, 
