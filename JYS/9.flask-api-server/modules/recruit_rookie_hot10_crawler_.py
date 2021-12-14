@@ -4,7 +4,7 @@ def scrape_saramin_rookie(output_path):
     import time
     import pandas as pd
     
-    browser = webdriver.Chrome(r'\Users\user\Downloads\chromedriver')
+    browser = webdriver.Chrome('/Users/sky/Downloads/chromedriver')
     
     url = 'https://www.saramin.co.kr/zf_user/jobs/hot100'
     browser.get(url)    
@@ -53,7 +53,7 @@ def scrape_jobkorea_rookie(output_path):
     import pandas as pd
     
     url = 'https://www.jobkorea.co.kr/Top100/?Main_Career_Type=1&Search_Type=1&BizJobtype_Bctgr_Code=10016&BizJobtype_Bctgr_Name=IT·인터넷&BizJobtype_Code=0&BizJobtype_Name=IT·인터넷+전체&Major_Big_Code=0&Major_Big_Name=전체&Major_Code=0&Major_Name=전체&Edu_Level_Code=9&Edu_Level_Name=전체&Edu_Level_Name=전체&MidScroll=0'
-    browser = webdriver.Chrome(r'\Users\user\Downloads\chromedriver')
+    browser = webdriver.Chrome('/Users/sky/Downloads/chromedriver')
     browser.get(url)
     
     soup = BeautifulSoup(browser.page_source)

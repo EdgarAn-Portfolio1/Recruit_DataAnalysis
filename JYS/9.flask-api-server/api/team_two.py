@@ -5,9 +5,16 @@ import json
 
 team_two = Blueprint('team_two', __name__)
 
-@team_two.route("/")
+# @team_two.route("/")
+# def index():
+#     return "This is Api Service for Team Two"
+
+@team_two.route("/recruit-score")
 def index():
-    return "This is Api Service for Team Two"
+    from modules import news_based_Senti
+    news_based_Senti.naver_news_it_recruit("it_recruit_news.csv")
+    total_score = news_based_Senti.calculate_score('it_recruit_news.csv', r'\Users\project_Sjy\JYS\5.Sentiment_Analysis\senti_dict.csv')
+    return str(total_score)
 
 @team_two.route("/demo-one")
 def demo_one() :

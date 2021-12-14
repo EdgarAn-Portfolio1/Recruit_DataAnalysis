@@ -8,7 +8,7 @@ def scrape_jobkorea_recruitIT(output_path):
     import pandas as pd
     
     main_url = 'https://www.jobkorea.co.kr'
-    browser = webdriver.Chrome(r'\Users\user\Downloads\chromedriver')
+    browser = webdriver.Chrome('/Users/sky/Downloads/chromedriver')
     
     job_list_jobkorea = []
 

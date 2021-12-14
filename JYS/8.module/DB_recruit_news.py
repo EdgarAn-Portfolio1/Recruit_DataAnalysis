@@ -12,7 +12,7 @@ def db_jobkorea_saramin():
 
     cursor = conn.cursor()
     
-    recruit_info = pd.read_csv('/Users/sky/class_python/2.DB/saramin_jobkorea_sjy_real.csv', index_col=0, encoding='utf8')
+    recruit_info = pd.read_csv(r'\Users\project\dataAnalysis-project\JYS\2.DB\saramin_jobkorea_sjy_real.csv', index_col=0, encoding='utf8')
     
     value_list = []
     for index, row in recruit_info.iterrows():
@@ -35,7 +35,7 @@ def db_news():
     import pymysql
     import pandas as pd
     
-    news = pd.read_csv('/Users/sky/class_python/2.DB/it_news.csv', index_col=0, encoding='utf-8')
+    news = pd.read_csv(r'\Users\project\dataAnalysis-project\JYS\2.DB\it_news.csv', index_col=0, encoding='utf-8')
     
     conn = pymysql.connect(host='localhost',
                        database='shakeit', # 자기 데이터 베이스에 맞게 접속

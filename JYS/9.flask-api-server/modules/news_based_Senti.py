@@ -1,4 +1,4 @@
-def naver_news_it_recruit(output_path):
+def naver_news_it_recruit(output_path, keyword='취업 "it"'):
     import os
     import sys
     import urllib.request
@@ -14,9 +14,10 @@ def naver_news_it_recruit(output_path):
     client_id = "mNhJ01jj6_6mlvwLR3uy" # 개발자센터에서 발급받은 Client ID 값
     client_secret = "JAHWSRUs2D" # 개발자센터에서 발급받은 Client Secret 값
     
-    query = urllib.parse.quote(input("궁금한 주제가 머꼬: "))
+    query = urllib.parse.quote(keyword)
+    # 위에 꺼로 검색기능 만들어도 되게따
     
-    #encText = urllib.parse.quote('취업 "it"')
+    #encText = urllib.parse.quote('취업 "it"') # 메인에서 출력되게 만들깅
     idx = 0
     display = 100
     start = 1
@@ -60,13 +61,13 @@ def naver_news_it_recruit(output_path):
     
     web_df["title_description"] = web_df["title"] + " " + web_df["description"]
     
-    web_df.to_csv(output_path, encoding="utf8")
+    web_df.to_csv(output_path, index=False, encoding="utf8")
     
-    
-    content = web_df['title_description']
-    
-    df2 = pd.read_csv(r'\Users\project\dataAnalysis-project\JYS\5.Sentiment_Analysis\senti_dict.csv', index_col=0)
-    df2
+def calculate_score(data_path, dict_path):
+    import pandas as pd
+    web_df = pd.read_csv(data_path)    
+    df2 = pd.read_csv(dict_path, index_col=0)
+    #서버경로 설정해줘야 댐(ㅅ아)
     
     e_dict = df2.reset_index()
     e_dict2 = { w : s for w, s in e_dict.values }
@@ -83,7 +84,11 @@ def naver_news_it_recruit(output_path):
         total_score2 += total_score
         #print(total_score)
         
-    print(total_score2)
+    return total_score2
     
 if __name__ == "__main__":
     naver_news_it_recruit('news_it_recruit_naver.csv')
+    total_score = calculate_score('news_it_recruit_naver.csv', 
+                                  '/Users/sky/class_python/5.Sentiment_Analysis/senti_dict.csv')
+    
+    print(total_score)
