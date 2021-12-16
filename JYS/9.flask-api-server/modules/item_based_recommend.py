@@ -6,7 +6,7 @@ def item_based_recommend():
     query = input("회사명 입력: ")  
     
     
-    df = pd.read_csv(r'\Users\project\dataAnalysis-project\JYS\6.Recommendation\saramin_jobkorea_sjy_real.csv', index_col=0)
+    df = pd.read_csv('/Users/sky/class_python/6.Recommendation/saramin_jobkorea_sjy_real.csv', index_col=0)
     df.reset_index(inplace=True)
     
     company = df['company'].tolist()
